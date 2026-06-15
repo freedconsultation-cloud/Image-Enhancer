@@ -375,10 +375,10 @@ export default function Home() {
                 draggable={false}
               />
 
-              {/* Enhanced — overlaid, clipped to left of slider */}
+              {/* Enhanced — overlaid, clipped to right of slider */}
               <div
                 className="absolute inset-0"
-                style={{ clipPath: `inset(0 ${100 - sliderPos}% 0 0)` }}
+                style={{ clipPath: `inset(0 0 0 ${sliderPos}%)` }}
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
